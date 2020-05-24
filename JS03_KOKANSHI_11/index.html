@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <title>MEMOアプリ</title>
+
+ <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="head">
+      <h1>MEMOアプリ</h1>
+    </div>
+    <div>
+      日付
+      <input type="date" id="date">
+    </div>
+    <div>
+      題名
+      <input type="text"  id="title" autocomplete="off">
+    </div>
+    <div>
+      内容
+    </div>
+    <div>
+      <textarea name="" id="text" cols="30" rows="10"></textarea>
+    </div>
+    <div class="btn">
+      <!-- 送信ボタン -->
+      <button id="send">送信</button>
+      <button id="delate">すべて削除</button>
+    </div>
+    <div>
+      <!-- 保存されたデータが表示される箇所 -->
+      <ul id="output"></ul>
+    </div>
+    
+  </div>
+
+  <!-- JQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!--** 以下Firebase **-->
+  <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase.js"></script>  
+  <script src="js/main.js"></script>
+</body>
+
+</html>
